@@ -8,6 +8,7 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -40,6 +41,7 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
     private ArrayList<StickerPack> stickerPackList;
 
     private RewardedVideoAd mAd;
+    private ProgressDialog mProgressDialog;
     StickerPack currentPack;
     Boolean reward = false;
 
@@ -51,11 +53,16 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
 
+        mProgressDialog = new ProgressDialog(this);
+        mProgressDialog.setMessage("Please wait... Loading Reward Video. After watching video completely you can add this sticker pack to WhatsApp");
+        mProgressDialog.setCancelable(false);
+    }
+
+    private void initializeRewardVideoAd(){
         String adMobAppId = BuildConfig.AD_MOB_APP_ID;
         MobileAds.initialize(this, adMobAppId);
         mAd = MobileAds.getRewardedVideoAdInstance(this);
         mAd.setRewardedVideoAdListener(this);
-        loadRewardedVideoAd();
     }
 
     private void loadRewardedVideoAd() {
@@ -66,22 +73,21 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
 
     @Override
     public void onRewardedVideoAdLoaded() {
-
+        mAd.show();
     }
 
     @Override
     public void onRewardedVideoAdOpened() {
-
+        mAd = null;
     }
 
     @Override
     public void onRewardedVideoStarted() {
-
+        mProgressDialog.dismiss();
     }
 
     @Override
     public void onRewardedVideoAdClosed() {
-        loadRewardedVideoAd();
         if(!reward){
             Toast.makeText(getApplicationContext(),"You can add this sticker pack to WhatsApp only if you watch the video completely",Toast.LENGTH_LONG).show();
         }
@@ -91,7 +97,6 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
     public void onRewarded(RewardItem rewardItem) {
         reward = true;
         addStickerPackToWhatsApp(currentPack.identifier, currentPack.name);
-        loadRewardedVideoAd();
     }
 
 
@@ -102,27 +107,11 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
 
     @Override
     public void onRewardedVideoAdFailedToLoad(int i) {
-        loadRewardedVideoAd();
     }
 
     @Override
     public void onRewardedVideoCompleted(){
         loadRewardedVideoAd();
-    }
-
-    public void showAlertDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(StickerPackListActivity.this, R.style.Theme_AppCompat_Light_Dialog);
-        builder.setTitle("Thanks for your patience");
-        builder.setMessage("Sorry Reward Video not loaded! Please wait for 5 seconds and try again. Only after watching video you can add this sticker pack to WhatsApp");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-
     }
 
     @Override
@@ -157,19 +146,11 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
 
     private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> {
         //addStickerPackToWhatsApp(pack.identifier, pack.name);
+        mProgressDialog.show();
         currentPack = pack;
         reward = false;
-        try {
-            if (mAd.isLoaded()) {
-                mAd.show();
-            }else {
-                loadRewardedVideoAd();
-                showAlertDialog();
-            }
-        } catch (Exception e) {
-            loadRewardedVideoAd();
-            showAlertDialog();
-        }
+        initializeRewardVideoAd();
+        loadRewardedVideoAd();
     };
 
     private void recalculateColumnCount() {

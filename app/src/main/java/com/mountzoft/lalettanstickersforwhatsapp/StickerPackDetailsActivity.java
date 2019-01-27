@@ -8,6 +8,7 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -62,6 +63,7 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
 
     private RewardedVideoAd mAd;
+    private ProgressDialog mProgressDialog;
     StickerPack currentPack;
     Boolean reward = false;
 
@@ -76,11 +78,9 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
         ImageView packTrayIcon = findViewById(R.id.tray_image);
         TextView packSizeTextView = findViewById(R.id.pack_size);
 
-        String adMobAppId = BuildConfig.AD_MOB_APP_ID;
-        MobileAds.initialize(this, adMobAppId);
-        mAd = MobileAds.getRewardedVideoAdInstance(this);
-        mAd.setRewardedVideoAdListener(this);
-        loadRewardedVideoAd();
+        mProgressDialog = new ProgressDialog(this);
+        mProgressDialog.setMessage("Please wait... Loading Reward Video. After watching video completely you can add this sticker pack to WhatsApp");
+        mProgressDialog.setCancelable(false);
 
         addButton = findViewById(R.id.add_to_whatsapp_button);
         alreadyAddedText = findViewById(R.id.already_added_text);
@@ -108,17 +108,17 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
     public void showAds(StickerPack pack){
         currentPack = pack;
         reward = false;
-        try {
-            if (mAd.isLoaded()) {
-                mAd.show();
-            }else {
-                loadRewardedVideoAd();
-                showAlertDialog();
-            }
-        } catch (Exception e) {
-            loadRewardedVideoAd();
-            showAlertDialog();
-        }
+        mProgressDialog.show();
+        initializeRewardVideoAd();
+        loadRewardedVideoAd();
+
+    }
+
+    private void initializeRewardVideoAd(){
+        String adMobAppId = BuildConfig.AD_MOB_APP_ID;
+        MobileAds.initialize(this, adMobAppId);
+        mAd = MobileAds.getRewardedVideoAdInstance(this);
+        mAd.setRewardedVideoAdListener(this);
     }
 
     private void loadRewardedVideoAd() {
@@ -129,22 +129,24 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
 
     @Override
     public void onRewardedVideoAdLoaded() {
+        mAd.show();
 
     }
 
     @Override
     public void onRewardedVideoAdOpened() {
+        mAd = null;
 
     }
 
     @Override
     public void onRewardedVideoStarted() {
+        mProgressDialog.dismiss();
 
     }
 
     @Override
     public void onRewardedVideoAdClosed() {
-        loadRewardedVideoAd();
         if(!reward){
             Toast.makeText(getApplicationContext(),"You can add this sticker pack to WhatsApp only if you watch the video completely",Toast.LENGTH_LONG).show();
         }
@@ -165,7 +167,6 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
 
     @Override
     public void onRewardedVideoAdFailedToLoad(int i) {
-        loadRewardedVideoAd();
     }
 
     @Override
