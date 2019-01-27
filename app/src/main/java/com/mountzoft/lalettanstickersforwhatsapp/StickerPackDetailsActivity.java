@@ -173,21 +173,6 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
     public void onRewardedVideoCompleted(){
     }
 
-    public void showAlertDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(StickerPackDetailsActivity.this, R.style.Theme_AppCompat_Light_Dialog);
-        builder.setTitle("Thanks for your patience");
-        builder.setMessage("Sorry Reward Video not loaded! Maybe a network issue. Please wait for some seconds and try again. Only after watching video you can add this sticker pack to WhatsApp");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-
-    }
-
     private void launchInfoActivity(String publisherWebsite, String publisherEmail, String privacyPolicyWebsite, String trayIconUriString) {
         Intent intent = new Intent(StickerPackDetailsActivity.this, StickerPackInfoActivity.class);
         intent.putExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_ID, stickerPack.identifier);
