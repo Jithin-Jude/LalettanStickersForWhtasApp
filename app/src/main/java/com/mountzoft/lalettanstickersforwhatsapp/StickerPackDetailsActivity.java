@@ -171,7 +171,6 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
 
     @Override
     public void onRewardedVideoCompleted(){
-        loadRewardedVideoAd();
     }
 
     public void showAlertDialog() {

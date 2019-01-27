@@ -111,7 +111,6 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
 
     @Override
     public void onRewardedVideoCompleted(){
-        loadRewardedVideoAd();
     }
 
     @Override
