@@ -5,7 +5,7 @@
     {
       "identifier": "1",
       "name": "Lalettan Sticker Pack - 1",
-      "publisher": "Mountzoft",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
@@ -13,106 +13,100 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "01_lalettan_kayamkulam_kochunni.webp",
-          "emojis": ["☕","🙂"]
+          "image_file": "lalettan_100.webp"
         },
         {
-          "image_file": "02_lalettan_kayamkulam_kochunni.webp",
-          "emojis": ["😄","😀"]
+          "image_file": "lalettan_101.webp"
         },
         {
-          "image_file": "03_lalettan_kayamkulam_kochunni.webp",
-          "emojis": ["😆","😂"]
+          "image_file": "lalettan_102.webp"
         },
         {
-          "image_file": "05_lalettan_narasimham.webp",
-          "emojis": ["😭","💧"]
+          "image_file": "lalettan_103.webp"
         },
         {
-          "image_file": "06_lalettan_kurushethra.webp",
-          "emojis": ["😍","♥"]
+          "image_file": "lalettan_104.webp"
         },
         {
-          "image_file": "07_lalettan_spadikam.webp",
-          "emojis": ["💔","👎"]
+          "image_file": "lalettan_105.webp"
         },
         {
-          "image_file": "08_lalettan_baba_kaliyanni.webp",
-          "emojis": ["😍","💑"]
+          "image_file": "lalettan_106.webp"
         },
         {
-          "image_file": "09_lalettan_karma_yodha.webp",
-          "emojis": ["😘","🍪"]
+          "image_file": "lalettan_107.webp"
         },
         {
-          "image_file": "10_lalettan_loham.webp",
-          "emojis": ["🤔","😐"]
+          "image_file": "lalettan_108.webp"
         },
         {
-          "image_file": "11_lalettan_1971_beyond_borders.webp",
-          "emojis": ["😱","😵"]
+          "image_file": "lalettan_109.webp"
         },
         {
-          "image_file": "12_lalettan_saj.webp",
-          "emojis": ["😡","😠"]
+          "image_file": "lalettan_110.webp"
         },
         {
-          "image_file": "13_lalettan_pulimurugan.webp",
-          "emojis": ["❓","🤔"]
+          "image_file": "lalettan_111.webp"
         },
         {
-          "image_file": "14_lalettan_hello.webp",
-          "emojis": ["🌈","😜"]
+          "image_file": "lalettan_112.webp"
         },
         {
-          "image_file": "15_lalettan_freestyle.webp",
-          "emojis": ["💻","😩"]
+          "image_file": "lalettan_113.webp"
         },
         {
-          "image_file": "16_lalettan_saj.webp",
-          "emojis": ["😡","😤"]
+          "image_file": "lalettan_114.webp"
         },
         {
-          "image_file": "17_lalettan_alibhai.webp",
-          "emojis": ["😩","😨"]
+          "image_file": "lalettan_115.webp"
         },
         {
-          "image_file": "18_lalettan_freestyle.webp",
-          "emojis": ["💻","🌃"]
+          "image_file": "lalettan_116.webp"
         },
         {
-          "image_file": "19_lalettan_kayamkulam_kochunni.webp",
-          "emojis": ["🎉","✨"]
+          "image_file": "lalettan_117.webp"
         },
         {
-          "image_file": "20_lalettan_jilla.webp",
-          "emojis": ["🤮","👎"]
+          "image_file": "lalettan_118.webp"
         },
         {
-          "image_file": "21_lalettan_saj.webp",
-          "emojis": ["🖐","🙋"]
+          "image_file": "lalettan_119.webp"
         },
         {
-          "image_file": "22_lalettan_freestyle.webp",
-          "emojis": ["🖐","👋"]
+          "image_file": "lalettan_120.webp"
         },
         {
-          "image_file": "23_lalettan_ravanaprabhu.webp",
-          "emojis": ["🍵","😌"]
+          "image_file": "lalettan_121.webp"
         },
         {
-          "image_file": "24_lalettan_freestyle.webp",
-          "emojis": ["📱","😦"]
+          "image_file": "lalettan_122.webp"
         },
         {
-          "image_file": "25_lalettan_freestyle.webp",
-          "emojis": ["🔋","😵"]
+          "image_file": "lalettan_123.webp"
+        },
+        {
+          "image_file": "lalettan_124.webp"
+        },
+        {
+          "image_file": "lalettan_125.webp"
+        },
+        {
+          "image_file": "lalettan_126.webp"
+        },
+        {
+          "image_file": "lalettan_127.webp"
+        },
+        {
+          "image_file": "lalettan_128.webp"
+        },
+        {
+          "image_file": "lalettan_129.webp"
         }
       ]
     },{
       "identifier": "2",
       "name": "Lalettan Sticker Pack - 2",
-      "publisher": "Mountzoft",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
@@ -120,71 +114,71 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "lalettan_01.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_130.webp"
         },{
-          "image_file": "lalettan_02.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_131.webp"
         },{
-          "image_file": "lalettan_03.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_132.webp"
         },{
-          "image_file": "lalettan_04.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_133.webp"
         },{
-          "image_file": "lalettan_05.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_134.webp"
         },{
-          "image_file": "lalettan_06.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_135.webp"
         },{
-          "image_file": "lalettan_07.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_136.webp"
         },{
-          "image_file": "lalettan_08.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_137.webp"
         },{
-          "image_file": "lalettan_09.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_138.webp"
         },{
-          "image_file": "lalettan_10.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_139.webp"
         },{
-          "image_file": "lalettan_11.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_140.webp"
         },{
-          "image_file": "lalettan_12.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_141.webp"
         },{
-          "image_file": "lalettan_13.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_142.webp"
         },{
-          "image_file": "lalettan_14.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_143.webp"
         },{
-          "image_file": "lalettan_15.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_144.webp"
         },{
-          "image_file": "lalettan_16.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_145.webp"
         },{
-          "image_file": "lalettan_17.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_146.webp"
         },{
-          "image_file": "lalettan_18.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_147.webp"
         },{
-          "image_file": "lalettan_19.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_148.webp"
         },{
-          "image_file": "lalettan_20.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_149.webp"
+        },{
+          "image_file": "lalettan_150.webp"
+        },{
+          "image_file": "lalettan_151.webp"
+        },{
+          "image_file": "lalettan_152.webp"
+        },{
+          "image_file": "lalettan_153.webp"
+        },{
+          "image_file": "lalettan_154.webp"
+        },{
+          "image_file": "lalettan_155.webp"
+        },{
+          "image_file": "lalettan_156.webp"
+        },{
+          "image_file": "lalettan_157.webp"
+        },{
+          "image_file": "lalettan_158.webp"
+        },{
+          "image_file": "lalettan_159.webp"
         }
       ]
     },{
       "identifier": "3",
       "name": "Lalettan Sticker Pack - 3",
-      "publisher": "Mountzoft",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
@@ -192,71 +186,71 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "lalettan_25.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_160.webp"
         },{
-          "image_file": "lalettan_26.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_161.webp"
         },{
-          "image_file": "lalettan_27.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_162.webp"
         },{
-          "image_file": "lalettan_28.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_163.webp"
         },{
-          "image_file": "lalettan_29.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_164.webp"
         },{
-          "image_file": "lalettan_30.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_165.webp"
         },{
-          "image_file": "lalettan_31.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_166.webp"
         },{
-          "image_file": "lalettan_32.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_167.webp"
         },{
-          "image_file": "lalettan_33.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_168.webp"
         },{
-          "image_file": "lalettan_34.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_169.webp"
         },{
-          "image_file": "lalettan_35.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_170.webp"
         },{
-          "image_file": "lalettan_36.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_171.webp"
         },{
-          "image_file": "lalettan_37.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_172.webp"
         },{
-          "image_file": "lalettan_38.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_173.webp"
         },{
-          "image_file": "lalettan_39.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_174.webp"
         },{
-          "image_file": "lalettan_40.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_175.webp"
         },{
-          "image_file": "lalettan_41.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_176.webp"
         },{
-          "image_file": "lalettan_42.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_177.webp"
         },{
-          "image_file": "lalettan_43.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_178.webp"
         },{
-          "image_file": "lalettan_44.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_179.webp"
+        },{
+          "image_file": "lalettan_180.webp"
+        },{
+          "image_file": "lalettan_181.webp"
+        },{
+          "image_file": "lalettan_182.webp"
+        },{
+          "image_file": "lalettan_183.webp"
+        },{
+          "image_file": "lalettan_184.webp"
+        },{
+          "image_file": "lalettan_185.webp"
+        },{
+          "image_file": "lalettan_186.webp"
+        },{
+          "image_file": "lalettan_187.webp"
+        },{
+          "image_file": "lalettan_188.webp"
+        },{
+          "image_file": "lalettan_189.webp"
         }
       ]
     },{
       "identifier": "4",
       "name": "Lalettan Sticker Pack - 4",
-      "publisher": "Mountzoft",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
@@ -264,237 +258,177 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "lalettan_49.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_190.webp"
         },{
-          "image_file": "lalettan_50.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_191.webp"
         },{
-          "image_file": "lalettan_51.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_192.webp"
         },{
-          "image_file": "lalettan_52.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_193.webp"
         },{
-          "image_file": "lalettan_53.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_194.webp"
         },{
-          "image_file": "lalettan_54.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_195.webp"
         },{
-          "image_file": "lalettan_55.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_196.webp"
         },{
-          "image_file": "lalettan_56.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_197.webp"
         },{
-          "image_file": "lalettan_57.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_198.webp"
         },{
-          "image_file": "lalettan_58.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_199.webp"
         },{
-          "image_file": "lalettan_59.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_200.webp"
         },{
-          "image_file": "lalettan_60.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_201.webp"
         },{
-          "image_file": "lalettan_61.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_202.webp"
         },{
-          "image_file": "lalettan_62.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_63.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_64.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_65.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_66.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_67.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_68.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_203.webp"
         }
       ]
     },{
       "identifier": "5",
-      "name": "Lalettan Sticker Pack - 5",
-      "publisher": "Mountzoft",
+      "name": "Lalettan Stickers - Odiyan",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
+
         {
-          "image_file": "lalettan_21.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_22.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_23.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_24.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_45.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_46.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_47.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_48.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_69.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_70.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_71.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_72.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_73.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_74.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_75.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_76.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_77.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_78.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_79.webp",
-          "emojis": ["🙂","🙂"]
-        },{
-          "image_file": "lalettan_80.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "00_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "01_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "02_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "03_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "04_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "05_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "06_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "07_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "08_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "09_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "10_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "11_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "12_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "13_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "14_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "15_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "16_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "17_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "18_lalettan_odiyan.webp"
+        },
+        {
+          "image_file": "19_lalettan_odiyan.webp"
         }
       ]
-    },
-
-    {
+    },{
       "identifier": "6",
-      "name": "Lalettan Stickers - Odiyan",
-      "publisher": "Mountzoft",
+      "name": "Lalettan Stickers - Lucifer",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
       "privacy_policy_website": "",
       "license_agreement_website": "",
       "stickers": [
-
         {
-          "image_file": "00_lalettan_odiyan.webp",
-          "emojis": ["😩","😰"]
-        },
-        {
-          "image_file": "01_lalettan_odiyan.webp",
-          "emojis": ["☕","🙂"]
-        },
-        {
-          "image_file": "02_lalettan_odiyan.webp",
-          "emojis": ["😄","😀"]
-        },
-        {
-          "image_file": "03_lalettan_odiyan.webp",
-          "emojis": ["😆","😂"]
-        },
-        {
-          "image_file": "04_lalettan_odiyan.webp",
-          "emojis": ["😩","😰"]
-        },
-        {
-          "image_file": "05_lalettan_odiyan.webp",
-          "emojis": ["😭","💧"]
-        },
-        {
-          "image_file": "06_lalettan_odiyan.webp",
-          "emojis": ["😍","♥"]
-        },
-        {
-          "image_file": "07_lalettan_odiyan.webp",
-          "emojis": ["💔","👎"]
-        },
-        {
-          "image_file": "08_lalettan_odiyan.webp",
-          "emojis": ["😍","💑"]
-        },
-        {
-          "image_file": "09_lalettan_odiyan.webp",
-          "emojis": ["😘","🍪"]
-        },
-        {
-          "image_file": "10_lalettan_odiyan.webp",
-          "emojis": ["🤔","😐"]
-        },
-        {
-          "image_file": "11_lalettan_odiyan.webp",
-          "emojis": ["😱","😵"]
-        },
-        {
-          "image_file": "12_lalettan_odiyan.webp",
-          "emojis": ["😡","😠"]
-        },
-        {
-          "image_file": "13_lalettan_odiyan.webp",
-          "emojis": ["❓","🤔"]
-        },
-        {
-          "image_file": "14_lalettan_odiyan.webp",
-          "emojis": ["🌈","😜"]
-        },
-        {
-          "image_file": "15_lalettan_odiyan.webp",
-          "emojis": ["💻","😩"]
-        },
-        {
-          "image_file": "16_lalettan_odiyan.webp",
-          "emojis": ["😡","😤"]
-        },
-        {
-          "image_file": "17_lalettan_odiyan.webp",
-          "emojis": ["😩","😨"]
-        },
-        {
-          "image_file": "18_lalettan_odiyan.webp",
-          "emojis": ["💻","🌃"]
-        },
-        {
-          "image_file": "19_lalettan_odiyan.webp",
-          "emojis": ["🎉","✨"]
+          "image_file": "lalettan_lucifer_00.webp"
+        },{
+          "image_file": "lalettan_lucifer_01.webp"
+        },{
+          "image_file": "lalettan_lucifer_02.webp"
+        },{
+          "image_file": "lalettan_lucifer_03.webp"
+        },{
+          "image_file": "lalettan_lucifer_04.webp"
+        },{
+          "image_file": "lalettan_lucifer_05.webp"
+        },{
+          "image_file": "lalettan_lucifer_06.webp"
+        },{
+          "image_file": "lalettan_lucifer_08.webp"
+        },{
+          "image_file": "lalettan_lucifer_09.webp"
+        },{
+          "image_file": "lalettan_lucifer_10.webp"
+        },{
+          "image_file": "lalettan_lucifer_11.webp"
+        },{
+          "image_file": "lalettan_lucifer_12.webp"
+        },{
+          "image_file": "lalettan_lucifer_13.webp"
+        },{
+          "image_file": "lalettan_lucifer_14.webp"
+        },{
+          "image_file": "lalettan_lucifer_15.webp"
+        },{
+          "image_file": "lalettan_lucifer_16.webp"
+        },{
+          "image_file": "lalettan_lucifer_17.webp"
+        },{
+          "image_file": "lalettan_lucifer_18.webp"
+        },{
+          "image_file": "lalettan_lucifer_19.webp"
+        },{
+          "image_file": "lalettan_lucifer_20.webp"
+        },{
+          "image_file": "lalettan_lucifer_21.webp"
+        },{
+          "image_file": "lalettan_lucifer_22.webp"
+        },{
+          "image_file": "lalettan_lucifer_23.webp"
+        },{
+          "image_file": "lalettan_lucifer_24.webp"
+        },{
+          "image_file": "lalettan_lucifer_25.webp"
+        },{
+          "image_file": "lalettan_lucifer_26.webp"
+        },{
+          "image_file": "lalettan_lucifer_27.webp"
         }
       ]
     },{
       "identifier": "7",
-      "name": "Lalettan Sticker Pack - Lucifer",
-      "publisher": "Mountzoft",
+      "name": "Lalettan Dialogs Pack",
+      "publisher": "MountZoft",
       "tray_image_file": "lalettan_cover.png",
       "publisher_email":"mountzoft@gmail.com",
       "publisher_website": "",
@@ -502,29 +436,65 @@
       "license_agreement_website": "",
       "stickers": [
         {
-          "image_file": "lalettan_lucifer_00.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_01.webp"
         },{
-          "image_file": "lalettan_lucifer_01.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_02.webp"
         },{
-          "image_file": "lalettan_lucifer_02.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_03.webp"
         },{
-          "image_file": "lalettan_lucifer_03.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_04.webp"
         },{
-          "image_file": "lalettan_lucifer_04.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_05.webp"
         },{
-          "image_file": "lalettan_lucifer_05.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_06.webp"
         },{
-          "image_file": "lalettan_lucifer_06.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_07.webp"
         },{
-          "image_file": "lalettan_lucifer_08.webp",
-          "emojis": ["🙂","🙂"]
+          "image_file": "lalettan_dialogs_08.webp"
+        },{
+          "image_file": "lalettan_dialogs_09.webp"
+        },{
+          "image_file": "lalettan_dialogs_10.webp"
+        },{
+          "image_file": "lalettan_dialogs_11.webp"
+        },{
+          "image_file": "lalettan_dialogs_12.webp"
+        },{
+          "image_file": "lalettan_dialogs_13.webp"
+        },{
+          "image_file": "lalettan_dialogs_14.webp"
+        },{
+          "image_file": "lalettan_dialogs_15.webp"
+        },{
+          "image_file": "lalettan_dialogs_16.webp"
+        },{
+          "image_file": "lalettan_dialogs_17.webp"
+        },{
+          "image_file": "lalettan_dialogs_18.webp"
+        },{
+          "image_file": "lalettan_dialogs_19.webp"
+        },{
+          "image_file": "lalettan_dialogs_20.webp"
+        },{
+          "image_file": "lalettan_dialogs_21.webp"
+        },{
+          "image_file": "lalettan_dialogs_22.webp"
+        },{
+          "image_file": "lalettan_dialogs_23.webp"
+        },{
+          "image_file": "lalettan_dialogs_24.webp"
+        },{
+          "image_file": "lalettan_dialogs_25.webp"
+        },{
+          "image_file": "lalettan_dialogs_26.webp"
+        },{
+          "image_file": "lalettan_dialogs_27.webp"
+        },{
+          "image_file": "lalettan_dialogs_28.webp"
+        },{
+          "image_file": "lalettan_dialogs_29.webp"
+        },{
+          "image_file": "lalettan_dialogs_30.webp"
         }
       ]
     }

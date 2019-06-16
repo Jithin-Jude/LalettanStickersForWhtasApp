@@ -11,6 +11,7 @@
 
     <style name="MyApp.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/actionBarArrowColor</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
     <style name="TextStyle">

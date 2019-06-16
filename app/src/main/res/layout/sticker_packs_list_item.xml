@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground"
+    android:background="#424242"
     android:orientation="vertical"
     android:paddingBottom="4dp"
     android:paddingEnd="16dp"
@@ -21,10 +21,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="?attr/selectableItemBackground"
         android:contentDescription="@string/add_button_content_description"
         android:scaleType="center"
-        android:src="@drawable/sticker_3rdparty_add"
+        android:src="@drawable/ic_add_dark_theme_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:textColor="@android:color/black"
+            android:textColor="#ffffff"
             android:textSize="16sp"
             tools:text="Pusheen" />
 
@@ -56,6 +55,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
+            android:textColor="#a0a0a0"
             tools:text="petellison" />
 
         <TextView
@@ -63,6 +63,7 @@
             style="@style/sticker_packs_list_item_author_style"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:textColor="#a0a0a0"
             android:paddingEnd="@dimen/sticker_pack_list_item_row_dot_horizontal_padding"
             android:paddingLeft="@dimen/sticker_pack_list_item_row_dot_horizontal_padding"
             android:paddingRight="@dimen/sticker_pack_list_item_row_dot_horizontal_padding"
@@ -75,6 +76,7 @@
             style="@style/sticker_packs_list_item_author_style"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:textColor="#a0a0a0"
             tools:text="700kb" />
 
     </LinearLayout>
