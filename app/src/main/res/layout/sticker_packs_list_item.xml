@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="268dp"
+    app:cardBackgroundColor="#424242"
+    android:layout_margin="8dp"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.constraint.ConstraintLayout
     android:id="@+id/sticker_store_row_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -93,5 +102,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sticker_pack_info" />
 
-
 </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

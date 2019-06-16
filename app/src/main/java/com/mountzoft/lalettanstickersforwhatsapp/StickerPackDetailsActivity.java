@@ -163,6 +163,9 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
 
             Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "You can add this sticker pack to WhatsApp only if you watch the video completely", Snackbar.LENGTH_LONG);
+            snackbar.setDuration(5000);
+            View sbView = snackbar.getView();
+            sbView.setBackgroundResource(R.color.colorPrimary);
             snackbar.show();
         }
     }

@@ -24,6 +24,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -107,6 +108,9 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
         if(!reward){
             Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "You can add this sticker pack to WhatsApp only if you watch the video completely", Snackbar.LENGTH_LONG);
+            snackbar.setDuration(5000);
+            View sbView = snackbar.getView();
+            sbView.setBackgroundResource(R.color.colorPrimary);
             snackbar.show();
         }
     }
