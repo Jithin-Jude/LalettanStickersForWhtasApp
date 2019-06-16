@@ -8,6 +8,7 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -25,7 +26,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 public class EntryActivity extends AppCompatActivity {
-    private View progressBar;
+    private ProgressDialog mProgressDialog;
     private LoadListAsyncTask loadListAsyncTask;
 
     @Override
@@ -37,13 +38,17 @@ public class EntryActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        progressBar = findViewById(R.id.entry_activity_progress);
+        mProgressDialog = new ProgressDialog(this, android.R.style.Theme_DeviceDefault_Dialog);
+        mProgressDialog.setTitle("Please wait...");
+        mProgressDialog.setMessage("Loading sticker packs");
+        mProgressDialog.setCancelable(false);
+        mProgressDialog.show();
+
         loadListAsyncTask = new LoadListAsyncTask(this);
         loadListAsyncTask.execute();
     }
 
     private void showStickerPack(ArrayList<StickerPack> stickerPackList) {
-        progressBar.setVisibility(View.GONE);
         if (stickerPackList.size() > 1) {
             final Intent intent = new Intent(this, StickerPackListActivity.class);
             intent.putParcelableArrayListExtra(StickerPackListActivity.EXTRA_STICKER_PACK_LIST_DATA, stickerPackList);
@@ -58,13 +63,14 @@ public class EntryActivity extends AppCompatActivity {
             finish();
             overridePendingTransition(0, 0);
         }
+        //mProgressDialog.dismiss();
     }
 
     private void showErrorMessage(String errorMessage) {
-        progressBar.setVisibility(View.GONE);
         Log.e("EntryActivity", "error fetching sticker packs, " + errorMessage);
         final TextView errorMessageTV = findViewById(R.id.error_message);
         errorMessageTV.setText(getString(R.string.error_message, errorMessage));
+        mProgressDialog.dismiss();
     }
 
     @Override

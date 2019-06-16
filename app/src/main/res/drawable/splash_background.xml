@@ -8,4 +8,9 @@
             android:gravity="center" />
     </item>
 
+    <item>
+        <bitmap android:src="@drawable/app_name_logo"
+            android:gravity="bottom" />
+    </item>
+
 </layer-list>
