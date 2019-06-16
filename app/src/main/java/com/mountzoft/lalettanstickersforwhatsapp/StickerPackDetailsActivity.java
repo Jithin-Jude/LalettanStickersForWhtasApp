@@ -8,6 +8,7 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,7 +16,9 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -71,6 +74,14 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sticker_pack_details);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.custom_actionbar);
+
+        TextView appCompatTextView = findViewById(R.id.tvTitleCustomActionBar);
+        appCompatTextView.setText(getString(R.string.title_activity_sticker_pack_details_multiple_pack));
+
+
         boolean showUpButton = getIntent().getBooleanExtra(EXTRA_SHOW_UP_BUTTON, false);
         stickerPack = getIntent().getParcelableExtra(EXTRA_STICKER_PACK_DATA);
         TextView packNameTextView = findViewById(R.id.pack_name);
@@ -78,8 +89,9 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
         ImageView packTrayIcon = findViewById(R.id.tray_image);
         TextView packSizeTextView = findViewById(R.id.pack_size);
 
-        mProgressDialog = new ProgressDialog(this);
-        mProgressDialog.setMessage("Please wait... Loading Reward Video. After watching video completely you can add this sticker pack to WhatsApp");
+        mProgressDialog = new ProgressDialog(this, android.R.style.Theme_DeviceDefault_Dialog);
+        mProgressDialog.setTitle("Loading Reward Video...");
+        mProgressDialog.setMessage("Watch video completely and add sticker pack to WhatsApp");
         mProgressDialog.setCancelable(false);
 
         addButton = findViewById(R.id.add_to_whatsapp_button);
@@ -148,7 +160,10 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
     @Override
     public void onRewardedVideoAdClosed() {
         if(!reward){
-            Toast.makeText(getApplicationContext(),"You can add this sticker pack to WhatsApp only if you watch the video completely",Toast.LENGTH_LONG).show();
+
+            Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "You can add this sticker pack to WhatsApp only if you watch the video completely", Snackbar.LENGTH_LONG);
+            snackbar.show();
         }
     }
 
@@ -181,25 +196,6 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity implement
         intent.putExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_PRIVACY_POLICY, privacyPolicyWebsite);
         intent.putExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_TRAY_ICON, trayIconUriString);
         startActivity(intent);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_info && stickerPack != null) {
-            final String publisherWebsite = stickerPack.publisherWebsite;
-            final String publisherEmail = stickerPack.publisherEmail;
-            final String privacyPolicyWebsite = stickerPack.privacyPolicyWebsite;
-            Uri trayIconUri = StickerPackLoader.getStickerAssetUri(stickerPack.identifier, stickerPack.trayImageFile);
-            launchInfoActivity(publisherWebsite, publisherEmail, privacyPolicyWebsite, trayIconUri.toString());
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 

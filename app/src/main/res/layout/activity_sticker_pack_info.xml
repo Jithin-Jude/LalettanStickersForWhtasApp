@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,125 +9,66 @@
     android:paddingTop="8dp"
     tools:context=".StickerPackInfoActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/tray_icon"
-            style="@style/InfoButtonStyle"
-            android:textColor="#B9B9B9"
-            tools:drawableLeft="@drawable/sticker_3rdparty_web"
-            tools:drawableStart="@drawable/sticker_3rdparty_web"
-            android:clickable="false"
-            android:text="@string/info_screen_tray_icon" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
-        <TextView
-            android:id="@+id/view_webpage"
-            style="@style/InfoButtonStyle"
-            android:drawableLeft="@drawable/sticker_3rdparty_web"
-            android:drawableStart="@drawable/sticker_3rdparty_web"
-            android:text="@string/view_webpage" />
-
-        <TextView
-            android:id="@+id/send_email"
-            style="@style/InfoButtonStyle"
-            android:drawableLeft="@drawable/sticker_3rdparty_email"
-            android:drawableStart="@drawable/sticker_3rdparty_email"
-            android:text="@string/send_email" />
-
-        <TextView
-            android:id="@+id/privacy_policy"
-            style="@style/InfoButtonStyle"
-            android:drawableLeft="@drawable/sticker_3rdparty_privacy"
-            android:drawableStart="@drawable/sticker_3rdparty_privacy"
-            android:text="@string/privacy_policy" />
-    </LinearLayout>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="8dp">
-            <TextView
-                android:id="@+id/devloper_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meet Developer :"
-                android:textSize="18sp"/>
-            <TextView
-                android:id="@+id/developer_portfolio_instagram"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="https://www.instagram.com/mr_exception_/"
-                android:autoLink="web|email"
-                android:textColorLink="#0000EE"
-                android:textSize="14sp"/>
-            <TextView
-                android:id="@+id/developer_portfolio_twitter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="https://twitter.com/jithin_jude"
-                android:autoLink="web|email"
-                android:textColorLink="#0000EE"
-                android:textSize="14sp"/>
-            <TextView
-                android:id="@+id/developer_portfolio_linkedin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="https://www.linkedin.com/in/jithinkjose1997/"
-                android:autoLink="web|email"
-                android:textColorLink="#0000EE"
-                android:textSize="14sp"/>
-            <TextView
-                android:id="@+id/developer_portfolio_facebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="https://www.facebook.com/jithin.jude"
-                android:autoLink="web|email"
-                android:textColorLink="#0000EE"
-                android:textSize="14sp"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text="Lalettan Stickers for WhatsApp is a\nsticker collection of The complete\nactor Mohanlal. Lalettan Stickers for\nWhatsApp is created and maintained\nby MountZoft Labs."
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/rate_app"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Powered by MountZoft Labs"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="#075E54"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                app:srcCompat="@drawable/rate_and_review" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Give your rating and reviews here!"
-                android:textColor="#FFFFFF"
-                android:layout_margin="16dp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="22sp"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autoLink="email"
+        android:text="mountzoft@gmail.com"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</android.support.constraint.ConstraintLayout>

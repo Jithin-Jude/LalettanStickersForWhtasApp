@@ -8,15 +8,23 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -49,12 +57,20 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sticker_pack_list);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.custom_actionbar);
+
+        TextView appCompatTextView = findViewById(R.id.tvTitleCustomActionBar);
+        appCompatTextView.setText(getString(R.string.title_activity_sticker_packs_list));
+
         packRecyclerView = findViewById(R.id.sticker_pack_list);
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
 
-        mProgressDialog = new ProgressDialog(this);
-        mProgressDialog.setMessage("Please wait... Loading Reward Video. After watching video completely you can add this sticker pack to WhatsApp");
+        mProgressDialog = new ProgressDialog(this, android.R.style.Theme_DeviceDefault_Dialog);
+        mProgressDialog.setTitle("Loading Reward Video...");
+        mProgressDialog.setMessage("Watch video completely and add sticker pack to WhatsApp");
         mProgressDialog.setCancelable(false);
     }
 
@@ -89,7 +105,9 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
     @Override
     public void onRewardedVideoAdClosed() {
         if(!reward){
-            Toast.makeText(getApplicationContext(),"You can add this sticker pack to WhatsApp only if you watch the video completely",Toast.LENGTH_LONG).show();
+            Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "You can add this sticker pack to WhatsApp only if you watch the video completely", Snackbar.LENGTH_LONG);
+            snackbar.show();
         }
     }
 
@@ -126,6 +144,22 @@ public class StickerPackListActivity extends AddStickerPackActivity implements R
         if (whiteListCheckAsyncTask != null && !whiteListCheckAsyncTask.isCancelled()) {
             whiteListCheckAsyncTask.cancel(true);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_info) {
+            Intent intent = new Intent(this, StickerPackInfoActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void showStickerPackList(List<StickerPack> stickerPackList) {

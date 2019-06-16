@@ -3,7 +3,6 @@
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#03DAC6</color>
-    <color name="inactiveAddButtonColor">#B3B3B3</color>
     <color name="infoPageBackgroundColor">#121212</color>
     <color name="actionBarArrowColor">@color/colorAccent</color>
 </resources>

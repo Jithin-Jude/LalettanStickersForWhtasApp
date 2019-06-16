@@ -8,6 +8,7 @@
 
 package com.mountzoft.lalettanstickersforwhatsapp;
 
+import android.app.ActionBar;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -17,6 +18,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.DrawableRes;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.Log;
@@ -26,91 +29,20 @@ import android.widget.TextView;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class StickerPackInfoActivity extends BaseActivity {
-
-    private static final String TAG = "StickerPackInfoActivity";
+public class StickerPackInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sticker_pack_info);
 
-        CardView rateAppCardView = findViewById(R.id.rate_app);
-        rateAppCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("market://details?id=" + getPackageName());
-                Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-                // To count with Play market backstack, After pressing back button,
-                // to taken back to our application, we need to add following flags to intent.
-                goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
-                        Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
-                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-                try {
-                    startActivity(goToMarket);
-                } catch (ActivityNotFoundException e) {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
-                }
-            }
-        });
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.custom_actionbar);
 
-        final String trayIconUriString = getIntent().getStringExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_TRAY_ICON);
-        final String website = getIntent().getStringExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_WEBSITE);
-        final String email = getIntent().getStringExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_EMAIL);
-        final String privacyPolicy = getIntent().getStringExtra(StickerPackDetailsActivity.EXTRA_STICKER_PACK_PRIVACY_POLICY);
+        TextView appCompatTextView = findViewById(R.id.tvTitleCustomActionBar);
+        appCompatTextView.setText(getString(R.string.title_activity_sticker_pack_info));
 
-        final TextView trayIcon = findViewById(R.id.tray_icon);
-        try {
-            final InputStream inputStream = getContentResolver().openInputStream(Uri.parse(trayIconUriString));
-            final BitmapDrawable trayDrawable = new BitmapDrawable(getResources(), inputStream);
-            final Drawable emailDrawable = getDrawableForAllAPIs(R.drawable.sticker_3rdparty_email);
-            trayDrawable.setBounds(new Rect(0, 0, emailDrawable.getIntrinsicWidth(), emailDrawable.getIntrinsicHeight()));
-            trayIcon.setCompoundDrawables(trayDrawable, null, null, null);
-        } catch (FileNotFoundException e) {
-            Log.e(TAG, "could not find the uri for the tray image:" + trayIconUriString);
-        }
-
-        final TextView viewWebpage = findViewById(R.id.view_webpage);
-        if (TextUtils.isEmpty(website)) {
-            viewWebpage.setVisibility(View.GONE);
-        } else {
-            viewWebpage.setOnClickListener(v -> launchWebpage(website));
-        }
-
-        final TextView sendEmail = findViewById(R.id.send_email);
-        if (TextUtils.isEmpty(email)) {
-            sendEmail.setVisibility(View.GONE);
-        } else {
-            sendEmail.setOnClickListener(v -> launchEmailClient(email));
-        }
-
-        final TextView viewPrivacyPolicy = findViewById(R.id.privacy_policy);
-        if (TextUtils.isEmpty(privacyPolicy)) {
-            viewPrivacyPolicy.setVisibility(View.GONE);
-        } else {
-            viewPrivacyPolicy.setOnClickListener(v -> launchWebpage(privacyPolicy));
-        }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    private void launchEmailClient(String email) {
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto", email, null));
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
-        startActivity(Intent.createChooser(emailIntent, getResources().getString(R.string.info_send_email_to_prompt)));
-    }
-
-    private void launchWebpage(String website) {
-        Uri uri = Uri.parse(website);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
-
-    private Drawable getDrawableForAllAPIs(@DrawableRes int id) {
-        if (Build.VERSION.SDK_INT >= 21) {
-            return getDrawable(id);
-        } else {
-            return getResources().getDrawable(id);
-        }
-    }
 }
